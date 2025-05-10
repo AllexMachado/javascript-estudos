@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro code JS!</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background-color: rgb(105, 105, 173);
+        }
+
+        h1{
+            color: rgb(255, 212, 22);
+        }
+
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World :D</h1>
+    <p> Pheww.... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt soluta expedita ducimus dignissimos cupiditate quisquam maiores voluptates atque? Molestiae accusamus aperiam voluptate commodi tempore suscipit similique, modi ullam facere.</p>
+    <script>
+        /*
+        var n1 = window.prompt('Digite um número:')
+        var n2 = window.prompt('Digite outro número:')
+
+        var s = n1 + n2
+        window.alert('A soma dos valores é:' + s)
+        
+        --------------------------------------------------
+
+        A janela não vai mostrar o resultado da conta, e sim a adição da variável. O mais significa a concatenação pois os valores de n1 e n2 são categorizados como uma string.
+        */
+
+        //O correto é fazer assim:
+
+        var n1 = Number.parseInt(window.prompt('Digite um número:'))
+        var n2 = Number.parseInt(window.prompt('Digite outro número:'))
+
+        var s = n1 + n2
+        window.alert('A soma dos valores é: ' + s)
+        
+        /*
+        Ao usar uma caracterização (Number.parseInt para números inteiros, ou Number.parseFloat para números quebrados) eu defini que o valor recebido no prompt é um número e não uma string, e então ele pode somar os dois números
+
+        OBS: Hoje em dia pode ser simplificado o Number.parseInt e Number.parseFloat em apenas Number. Cada um é usado de acordo com a necessidade no momento:
+
+        Caso precise de apenas números inteiros use então o - Number.parseInt
+        Caso precise de apenas números quebrados use então o - Number.parseFloat
+        Caso precise de apenas números idependentemente da resposta, use então o - Number
+
+
+        --------------------------------------------------
+
+        Em relação a Strings:
+        É possível usar as 'String(n)' ou então caso precise converter algo para uma string use 'n.toString()' quando necessário
+
+
+        ----------------------------------------------------
+
+        Além de usar a concatenação, também é possível usar com o $ e {}
+
+        Ex:
+
+        var nome = ('Allex')
+        var idade = ('18')
+
+        window.alert('O meu nome é ${nome} e tenho ${idade} anos :D')
+        */
+    </script>
+</body>
+</html>
