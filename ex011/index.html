@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <header>
+        <h1>Em que país você mora?</h1>
+    </header>
+    <main>
+        <form action="" method="get" autocomplete="on"></form>
+        <fieldset>
+            <legend>Escolha seu País:</legend>
+            <p>
+                <label for="pais">País</label>
+                <select name="pais" id="pais">
+
+                    <option value="" selected>Escolha uma opção</option>
+                    <optgroup label="América do Norte">
+                        <option value="CA">Canadá</option>
+                        <option value="EUA">Estados Unidos</option>
+                        <option value="ME">México</option>
+                        <option value="GRO">Groenlândia</option>
+                        <option value="BE">Bermudas</option>
+                        <option value="IC">Ilha de Clipperton</option>
+                        <option value="SPM">São Pedro e Miquelão</option>
+                    </optgroup>
+
+                    <optgroup label="América do Sul">
+                        <option value="CH">Chile</option>
+                        <option value="AR">Argentina</option>
+                        <option value="UR">Uruguai</option>
+                        <option value="PA">Paraguai</option>
+                        <option value="BR">Brasil</option>
+                        <option value="BO">Bolívia</option>
+                        <option value="PE">Peru</option>
+                        <option value="Equador">Equador</option>
+                        <option value="CO">Colômbia</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="GU">Guiana</option>
+                        <option value="SU">Suriname</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Enviar" onclick="enviar()">
+            </p>
+        </fieldset>
+        <fieldset>
+            <p id="res"></p>
+        </fieldset>
+    </main>
+    <script>
+        function enviar(){
+            var pais = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+            var pais = (pais.value)
+            res.innerHTML = `Vivendo em ${pais}!`
+            if (pais == 'BR'){
+                res.innerHTML += ` Você é Brasileiro!!!`
+            } else {
+            res.innerHTML += ` Você é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
