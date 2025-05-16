@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você vota?</title>
+</head>
+<body>
+    <header>
+        <h1>Qual sua idade?</h1>
+    </header>
+    <main>
+        <form action="" method="get" autocomplete="on"></form>
+        <fieldset>
+            <legend>Escreva sua idade:</legend>
+            <p>
+                <input type="number" name="idade" id="idade">
+            </p>
+            <p>
+                <input type="submit" value="Enviar" onclick="enviar()">
+            </p>
+        </fieldset>
+        <fieldset>
+            <p id="res"></p>
+        </fieldset>
+    </main>
+    <script>
+        function enviar(){
+            var idade = window.document.getElementById('idade')
+            var res = window.document.getElementById('res')
+            
+            var idade = (idade.value)
+            if (idade < 16){
+                res.innerHTML = `Você não vota.`
+            } else if (idade < 18 || idade > 65){
+                res.innerHTML = `Seu voto é opcional.`
+            } else{
+                res.innerHTML = `Seu voto é obrigatório.`
+            }
+        }
+    </script>
+</body>
+</html>
