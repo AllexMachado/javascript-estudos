@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(70, 142, 236);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    margin: 30px;
+
+    text-align: center;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    margin: auto;
+    padding: 15px;
+    width: 500px;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.233);
+}
+
+section {
+    flex: auto;
+
+    padding: 10px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+footer {
+    margin: 20px;
+
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
