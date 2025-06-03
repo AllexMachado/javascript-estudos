@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(70, 142, 236);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    margin: 30px;
+
+    text-align: center;
+    color: white;
+}
+
+main {
+    margin: auto;
+    padding: 15px;
+    width: 500px;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.233);
+}
+
+#res {
+    text-align: center;
+    margin: 10px;
+}
+
+footer {
+    margin: 20px;
+
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
